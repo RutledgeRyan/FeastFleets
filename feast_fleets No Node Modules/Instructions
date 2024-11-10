@@ -1,0 +1,26 @@
+Setting up the React Application Page
+
+We will need first to run NPM Nodemon
+--This will be necessary for packages within the nodes to be used further in the application
+
+We will then need to then install the tailwind dependencies
+-- NPM  install tailwindcss postcss autoprefixer
+-- NPM tailwind init -p
+
+Changes will need to be made within the tailwind.config.js
+
+--{module.exports ={
+    content: ["./src/**/*.{js,jsx,ts,tsx}"],
+    theme: {
+        extend: {},
+      }
+      plugins: [],
+};
+
+importing the tailwind dependencies will need to be added to the index.css
+
+-- @tailwind base;
+   @tailwind components;
+   @tailwind utilities;
+
+IN THIS SPECIFIC GITHUB - Only the NODEMON will be necessary.
